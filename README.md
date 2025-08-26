@@ -1,5 +1,6 @@
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
 [![CI](https://github.com/tshegomotlatle/MHA/actions/workflows/ci.yml/badge.svg)](https://github.com/tshegomotlatle/MHA/actions/workflows/ci.yml)
+[![CodeQL Advanced](https://github.com/tshegomotlatle/MHA/actions/workflows/codeql.yml/badge.svg)](https://github.com/tshegomotlatle/MHA/actions/workflows/codeql.yml)
 # MHA Solution
 
 ## Overview
