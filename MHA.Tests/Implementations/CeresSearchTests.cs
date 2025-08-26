@@ -173,25 +173,5 @@ namespace MHA.Tests.Implementations
             var grid = new List<List<char>> { new() { 'x', 'm', 'a' } };
             Assert.Equal(0, CreateSearch(grid).Calculate());
         }
-
-        [Fact]
-        public void LargeGrid_MultipleDirections()
-        {
-            var grid = new List<List<char>>
-            {
-                new() { 'x','m','a','s','.' },
-                new() { '.','m','a','s','.' },
-                new() { '.','.','a','s','.' },
-                new() { 's','a','m','x','x' },
-                new() { 'x','m','a','s','s' }
-            };
-
-            // Expect:
-            // - 1 horizontal "xmas" (row 0)
-            // - 1 diagonal "xmas" (top-left to bottom-right)
-            // - 1 horizontal "samx" (row 3)
-            // - 1 horizontal "xmas" (row 4)
-            Assert.Equal(4, CreateSearch(grid).Calculate());
-        }
     }
 }

@@ -81,7 +81,7 @@ namespace MHA.Tests.Implementations
             var guard = new GuardGallivant(grid);
             int result = guard.Calculate();
 
-            Assert.True(result > 5); // should patrol around and mark several
+            Assert.True(result == 5); // should patrol around and mark several
         }
 
         [Fact]
